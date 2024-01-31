@@ -6,7 +6,7 @@ function App() {
 	return (
 		<>
 			<div className='container mx-auto'>
-				<div className='flex flex-col'>
+				<div className='flex flex-col items-center justify-center'>
 					<TodoInput />
 					<TodoTask />
 				</div>
