@@ -1,7 +1,11 @@
 import React from "react";
 
-function TodoTask() {
-	return <div>TodoTask</div>;
+function TodoTask({ el }) {
+	return (
+		<div>
+			<h3>{el.task}</h3>
+		</div>
+	);
 }
 
 export default TodoTask;
