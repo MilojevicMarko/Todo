@@ -17,14 +17,18 @@ function App() {
 					todos={todos}
 					setTodos={setTodos}
 				/>
-				{todos.map((el) => {
-					return (
-						<TodoTask
-							key={el.id}
-							el={el}
-						/>
-					);
-				})}
+				<div className='flex flex-col gap-2 items-center mt-1'>
+					{todos.map((el) => {
+						return (
+							<TodoTask
+								key={el.id}
+								el={el}
+								todos={todos}
+								setTodos={setTodos}
+							/>
+						);
+					})}
+				</div>
 			</div>
 		</div>
 	);

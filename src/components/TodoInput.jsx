@@ -34,7 +34,7 @@ const TodoInput = ({ todos, setTodos }) => {
 			<div>
 				<FaPlusSquare
 					size={50}
-					color='grey'
+					color='#0e6e29'
 					onClick={handleAddTask}
 				/>
 			</div>
