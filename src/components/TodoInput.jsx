@@ -19,6 +19,7 @@ const TodoInput = ({ todos, setTodos }) => {
 			alert("Please select a task");
 		}
 	};
+
 	return (
 		<div className='flex justify-between'>
 			<div className='border-2 border-green-700 rounded-lg flex justify-between'>
@@ -31,7 +32,7 @@ const TodoInput = ({ todos, setTodos }) => {
 					onChange={(event) => handleInput(event)}
 				/>
 			</div>
-			<div>
+			<div className='flex'>
 				<FaPlusSquare
 					size={50}
 					color='#0e6e29'
